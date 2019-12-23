@@ -1,0 +1,33 @@
+{
+  "name": "ui-components-library",
+  "version": "1.0.0",
+  "description": "Collection of commonly used UI web components.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch sass/main.scss -o public/styles",
+    "watch": "webpack --watch --mode=development",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luxotus/ui-components-library.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luxotus/ui-components-library/issues"
+  },
+  "homepage": "https://github.com/luxotus/ui-components-library#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.8.0",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
