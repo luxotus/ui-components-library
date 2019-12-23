@@ -8,7 +8,7 @@ npm install
 '''
 
 ## Usage
-Navigate to public/index.html. After finding your desired component, hover over it and click button on top or side that says <code> and modal will popup with all its related html, css, js
+Navigate to public/index.html. After finding your desired component, hover over it and click button on top or side that says \<code\> and modal will popup with all its related html, css, js
 
 ## License
 [MIT](https://github.com/luxotus/ui-components-library/blob/master/LICENSE)
