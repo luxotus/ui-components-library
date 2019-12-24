@@ -24,6 +24,26 @@ const modal = (function() {
     })
   }
 
+  function handleTabClick() {
+    document.querySelectorAll('.general-modal .tabs button').forEach((btn) => {
+      btn.addEventListener('click', (event) => {
+        if (!event.target.classList.contains('active')) {
+          document.querySelector('.general-modal .tabs button.active').classList.remove('active');
+          event.currentTarget.classList.add('active');
+
+          const query = `.general-modal .tab-content[data-type="${event.currentTarget.getAttribute('data-type')}"]`;
+
+          if (document.querySelector(query).classList.contains('hide')) {
+            document.querySelectorAll('.general-modal .tab-content:not(.hide)').forEach((tab) => {
+              tab.classList.add('hide');
+            });
+            document.querySelector(query).classList.remove('hide');
+          }
+        }
+      });
+    })
+  }
+
   function displayHTML(event) {
     const query = event.currentTarget.getAttribute('data-target');
     const el = event.target.parentElement.parentElement.querySelector(query);
@@ -43,6 +63,7 @@ const modal = (function() {
     hljs.initHighlightingOnLoad();
     handleOverlayClick();
     handleViewCodeClick();
+    handleTabClick();
   }
 
   return {

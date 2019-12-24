@@ -13,8 +13,19 @@
     <div class="general-modal">
       <div class="display-side"></div>
       <div class="code-wrapper">
-        <pre>
+        <div class="tabs">
+          <button class="active" data-type="html">HTML</button>
+          <button data-type="css">CSS</button>
+          <button data-type="js">JS</button>
+        </div>
+        <pre class="tab-content" data-type="html">
           <code class="html"></code>
+        </pre>
+        <pre class="tab-content hide" data-type="css">
+          <code class="css"></code>
+        </pre>
+        <pre class="tab-content hide" data-type="js">
+          <code class="js"></code>
         </pre>
       </div>
     </div>
