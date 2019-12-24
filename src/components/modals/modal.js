@@ -1,3 +1,5 @@
+import hljs from 'highlight.js';
+
 const modal = (function() {
   function handleOverlayClick() {
     document.querySelector('.general-modal-overlay').addEventListener('click', (event) => {
@@ -28,11 +30,17 @@ const modal = (function() {
 
     document.querySelector('.general-modal .code-wrapper .html').innerHTML = '';
     document.querySelector('.general-modal .code-wrapper .html').appendChild(document.createTextNode(el.outerHTML));
+    reloadCode();
+  }
 
-    console.log({el, query});
+  function reloadCode() {
+    document.querySelectorAll('pre code').forEach((block) => {
+      hljs.highlightBlock(block);
+    });
   }
 
   function init() {
+    hljs.initHighlightingOnLoad();
     handleOverlayClick();
     handleViewCodeClick();
   }
