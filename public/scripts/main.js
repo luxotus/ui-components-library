@@ -86,14 +86,27 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/components/typography/typography.js":
+/*!*************************************************!*\
+  !*** ./src/components/typography/typography.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar typography = function () {\n  function init() {\n    console.log('here');\n  }\n\n  return {\n    init: init\n  };\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (typography);\n\n//# sourceURL=webpack:///./src/components/typography/typography.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("var commonPets = ['rock', 'dog', 'cat', 'rabbit'];\nvar exoticPets = ['cobra', 'nile monitor', 'tiger'];\nconsole.log([].concat(commonPets, exoticPets));\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_typography_typography__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/typography/typography */ \"./src/components/typography/typography.js\");\n\n_components_typography_typography__WEBPACK_IMPORTED_MODULE_0__[\"default\"].init();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
