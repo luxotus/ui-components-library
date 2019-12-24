@@ -1,3 +1,63 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat/Montserrat-Light.ttf");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat/Montserrat-LightItalic.ttf");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat/Montserrat-Italic.ttf");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat/Montserrat-MediumItalic.ttf");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat/Montserrat-SemiBoldItalic.ttf");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat/Montserrat-BoldItalic.ttf");
+  font-weight: 700;
+  font-style: italic; }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -332,7 +392,7 @@ textarea {
 
 :root {
   font-size: 12px;
-  font-family: sans-serif; }
+  font-family: Montserrat, sans-serif; }
 
 .main-wrapper {
   min-height: 100vh;
@@ -348,26 +408,63 @@ textarea {
   .main-wrapper .sub-section {
     margin-top: 50px;
     padding: 0 0 0 5%; }
+  .main-wrapper .view-code button {
+    font-size: 1.15rem;
+    padding: 8px 12px;
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+    font-weight: 500;
+    font-family: inherit; }
 
 .typography-sec .cards-wrapper {
-  display: flex;
-  width: 100%;
+  display: inline-block;
   padding: 25px 0; }
 
+.typography-sec .view-code {
+  position: absolute;
+  top: -39px;
+  right: 0; }
+
 .typography-sec .card {
-  padding: 15px 20px;
+  position: relative;
+  padding: 20px;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.14);
-  background-color: #fff; }
+  background-color: #fff;
+  border-radius: 8px; }
   .typography-sec .card .lower-details {
     display: flex;
     justify-content: space-between;
-    padding: 15px 0 0; }
+    padding: 20px 0 0; }
     .typography-sec .card .lower-details p {
       font-size: 1.15rem;
       text-transform: uppercase;
       font-weight: 500;
       color: #767676; }
 
+.typography-sec .card:not(:first-child) {
+  margin-top: 20px; }
+
 .typography-sec h1 {
   font-size: 36px;
+  font-weight: 600; }
+
+.typography-sec h2 {
+  font-size: 30px;
+  font-weight: 600; }
+
+.typography-sec h3 {
+  font-size: 27px;
+  font-weight: 600; }
+
+.typography-sec h4 {
+  font-size: 24px;
+  font-weight: 500; }
+
+.typography-sec h5 {
+  font-size: 21px;
+  font-weight: 500; }
+
+.typography-sec h6 {
+  font-size: 18px;
   font-weight: 500; }
