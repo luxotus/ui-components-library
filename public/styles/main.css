@@ -342,3 +342,9 @@ textarea {
   .main-wrapper .title {
     font-size: 3rem;
     font-weight: 500; }
+  .main-wrapper .sub-title {
+    font-size: 2rem;
+    font-weight: 500; }
+  .main-wrapper .sub-section {
+    margin-top: 50px;
+    padding: 0 0 0 5%; }
