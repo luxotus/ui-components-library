@@ -86,6 +86,18 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/components/modals/modal.js":
+/*!****************************************!*\
+  !*** ./src/components/modals/modal.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar modal = function () {\n  function handleOverlayClick() {\n    document.querySelector('.general-modal-overlay').addEventListener('click', function (event) {\n      var targetEl = event.target;\n\n      if (targetEl.classList.contains('general-modal-overlay')) {\n        targetEl.classList.add('hide');\n      }\n    });\n  }\n\n  function handleViewCodeClick() {\n    document.querySelectorAll('.view-code button').forEach(function (btn) {\n      btn.addEventListener('click', function (event) {\n        var overlay = document.querySelector('.general-modal-overlay');\n\n        if (overlay.classList.contains('hide')) {\n          overlay.classList.remove('hide');\n          displayHTML(event);\n        }\n      });\n    });\n  }\n\n  function displayHTML(event) {\n    var query = event.currentTarget.getAttribute('data-target');\n    var el = event.target.parentElement.parentElement.querySelector(query);\n    document.querySelector('.general-modal .code-wrapper .html').innerHTML = '';\n    document.querySelector('.general-modal .code-wrapper .html').appendChild(document.createTextNode(el.outerHTML));\n    console.log({\n      el: el,\n      query: query\n    });\n  }\n\n  function init() {\n    handleOverlayClick();\n    handleViewCodeClick();\n  }\n\n  return {\n    init: init\n  };\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (modal);\n\n//# sourceURL=webpack:///./src/components/modals/modal.js?");
+
+/***/ }),
+
 /***/ "./src/components/typography/typography.js":
 /*!*************************************************!*\
   !*** ./src/components/typography/typography.js ***!
@@ -106,7 +118,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar typography = function () 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_typography_typography__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/typography/typography */ \"./src/components/typography/typography.js\");\n\n_components_typography_typography__WEBPACK_IMPORTED_MODULE_0__[\"default\"].init();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_typography_typography__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/typography/typography */ \"./src/components/typography/typography.js\");\n/* harmony import */ var _components_modals_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/modals/modal */ \"./src/components/modals/modal.js\");\n\n\n_components_typography_typography__WEBPACK_IMPORTED_MODULE_0__[\"default\"].init();\n_components_modals_modal__WEBPACK_IMPORTED_MODULE_1__[\"default\"].init();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

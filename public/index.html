@@ -6,8 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>UI Components Library</title>
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/default.min.css">
 </head>
 <body>
+  <div class="general-modal-overlay hide">
+    <div class="general-modal">
+      <div class="display-side"></div>
+      <div class="code-wrapper">
+        <pre>
+          <code class="html"></code>
+        </pre>
+      </div>
+    </div>
+  </div>
   <div class="main-wrapper">
     <section class="typography-sec">
       <h1 class="title">Typography</h1>
@@ -22,7 +33,7 @@
               </div>
             </div>
             <div class="view-code">
-              <button>View Code</button>
+              <button data-target=".card h1">View Code</button>
             </div>
           </div>
           <div class="row">
@@ -85,5 +96,7 @@
     </section>
   </div>
   <script src="scripts/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
