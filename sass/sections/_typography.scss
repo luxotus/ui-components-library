@@ -5,14 +5,23 @@
   }
 
   .view-code {
-    position: absolute;
-    top: -39px;
-    right: 0;
+    position: relative;
+    height: 34px;
+    width: $view-code-width;
+    margin-left: $view-code-left;
+
+    button {
+      display: none;
+      position: absolute;
+      right: 0;
+    }
   }
 
   .card {
     position: relative;
+    min-width: calc(100% - #{$view-code-width + $view-code-left});
     padding: 20px;
+    margin-top: 10px;
     box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.14);
     background-color: #fff;
     border-radius: 8px;
@@ -31,8 +40,19 @@
     }
   }
 
-  .card:not(:first-child) {
+  .row {
+    display: flex;
+    align-items: center;
+  }
+
+  .row:not(:first-child) {
     margin-top: 20px;
+  }
+
+  .row:hover {
+    .view-code button {
+      display: block;
+    }
   }
 
   // components - typography

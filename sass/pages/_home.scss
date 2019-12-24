@@ -20,12 +20,17 @@
   }
 
   .view-code button {
+    height: 34px;
+    width: 100px;
     font-size: 1.15rem;
-    padding: 8px 12px;
     background-color: #fff;
     border: 1px solid #d6d6d6;
     border-radius: 3px;
     font-weight: 500;
     font-family: inherit;
+  }
+
+  .view-code button:hover {
+    opacity: .75;
   }
 }

@@ -409,26 +409,36 @@ textarea {
     margin-top: 50px;
     padding: 0 0 0 5%; }
   .main-wrapper .view-code button {
+    height: 34px;
+    width: 100px;
     font-size: 1.15rem;
-    padding: 8px 12px;
     background-color: #fff;
     border: 1px solid #d6d6d6;
     border-radius: 3px;
     font-weight: 500;
     font-family: inherit; }
+  .main-wrapper .view-code button:hover {
+    opacity: .75; }
 
 .typography-sec .cards-wrapper {
   display: inline-block;
   padding: 25px 0; }
 
 .typography-sec .view-code {
-  position: absolute;
-  top: -39px;
-  right: 0; }
+  position: relative;
+  height: 34px;
+  width: 100px;
+  margin-left: 10px; }
+  .typography-sec .view-code button {
+    display: none;
+    position: absolute;
+    right: 0; }
 
 .typography-sec .card {
   position: relative;
+  min-width: calc(100% - 110px);
   padding: 20px;
+  margin-top: 10px;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.14);
   background-color: #fff;
   border-radius: 8px; }
@@ -442,8 +452,15 @@ textarea {
       font-weight: 500;
       color: #767676; }
 
-.typography-sec .card:not(:first-child) {
+.typography-sec .row {
+  display: flex;
+  align-items: center; }
+
+.typography-sec .row:not(:first-child) {
   margin-top: 20px; }
+
+.typography-sec .row:hover .view-code button {
+  display: block; }
 
 .typography-sec h1 {
   font-size: 36px;
