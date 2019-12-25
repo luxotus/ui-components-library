@@ -406,16 +406,45 @@ textarea {
 
 .general-modal {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 800px;
-  background-color: #f8f8f8;
+  grid-template-columns: 1fr;
+  width: 400px;
   border-radius: 10px;
-  padding: 20px; }
+  padding: 15px 20px 20px;
+  background-color: #fff; }
+  .general-modal header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 15px; }
+    .general-modal header h1 {
+      font-size: 1.35rem;
+      font-weight: 500;
+      text-transform: capitalize; }
+    .general-modal header .close-btn {
+      display: flex;
+      height: 25px;
+      width: 25px;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      background-color: transparent; }
+      .general-modal header .close-btn .x {
+        height: 15px;
+        width: 2px;
+        background-color: #343434;
+        transform: rotateZ(45deg); }
+      .general-modal header .close-btn .x:before {
+        content: '';
+        display: block;
+        height: 15px;
+        width: 2px;
+        background-color: #343434;
+        transform: rotateZ(-90deg); }
+    .general-modal header .close-btn:hover {
+      opacity: .75; }
   .general-modal code {
     padding: 3%; }
   .general-modal .tabs {
-    display: flex;
-    background-color: #f8f8f8; }
+    display: flex; }
     .general-modal .tabs button {
       position: relative;
       padding: 8px 16px;

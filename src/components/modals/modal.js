@@ -46,12 +46,18 @@ const modal = (function() {
 
   function displayCode(event) {
     const query = event.currentTarget.getAttribute('data-target');
-    const source = event.currentTarget.getAttribute('data-source');
+    const dataCSS = event.currentTarget.getAttribute('data-css');
     const el = event.target.parentElement.parentElement.querySelector(query);
 
+    // Adding title to modal
+    document.querySelector('.general-modal header h1').innerHTML = event.currentTarget.getAttribute('data-title');
+
+    // Adding HTML to code section in modal
     document.querySelector('.general-modal .code-wrapper .html').innerHTML = '';
     document.querySelector('.general-modal .code-wrapper .html').appendChild(document.createTextNode(el.outerHTML));
-    getCodeFromFile(source, (data) => {
+
+    // Adding CSS to the code section in modal
+    getCodeFromFile(dataCSS, (data) => {
       document.querySelector('.general-modal .code-wrapper .css').innerHTML = '';
       document.querySelector('.general-modal .code-wrapper .css').innerHTML = data;
       reloadCode();
