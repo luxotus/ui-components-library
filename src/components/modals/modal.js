@@ -11,6 +11,12 @@ const modal = (function() {
     });
   }
 
+  function handleCloseBtn() {
+    document.querySelector('.general-modal header .close-btn').addEventListener('click', () => {
+      document.querySelector('.general-modal-overlay').classList.add('hide');
+    });
+  }
+
   function handleViewCodeClick() {
     document.querySelectorAll('.view-code button').forEach((btn) => {
       btn.addEventListener('click', (event) => {
@@ -84,6 +90,7 @@ const modal = (function() {
     handleOverlayClick();
     handleViewCodeClick();
     handleTabClick();
+    handleCloseBtn();
   }
 
   return {
