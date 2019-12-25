@@ -410,15 +410,13 @@ textarea {
   height: 400px;
   width: 800px;
   background-color: #f8f8f8;
-  border-radius: 10px; }
-  .general-modal .code-wrapper {
-    background-color: #f0f0f0; }
+  border-radius: 10px;
+  padding: 20px; }
   .general-modal code {
     padding: 3%; }
   .general-modal .tabs {
     display: flex;
-    background-color: #fff;
-    padding: 10px 0 0; }
+    background-color: #f8f8f8; }
     .general-modal .tabs button {
       position: relative;
       padding: 8px 16px;
@@ -441,8 +439,8 @@ textarea {
       left: 0; }
   .general-modal .tab-content {
     height: calc(100% - 43px);
-    border-left: 1px solid #d3d3d3;
-    border-top: 1px solid #d3d3d3; }
+    border: 1px solid #d3d3d3;
+    background-color: #f0f0f0; }
 
 .hide {
   display: none !important; }

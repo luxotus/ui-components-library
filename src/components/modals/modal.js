@@ -50,6 +50,7 @@ const modal = (function() {
 
     document.querySelector('.general-modal .code-wrapper .html').innerHTML = '';
     document.querySelector('.general-modal .code-wrapper .html').appendChild(document.createTextNode(el.outerHTML));
+    getStyles();
     reloadCode();
   }
 
@@ -57,6 +58,21 @@ const modal = (function() {
     document.querySelectorAll('pre code').forEach((block) => {
       hljs.highlightBlock(block);
     });
+  }
+
+  function getStyles() {
+    var client = new XMLHttpRequest();
+    client.open('GET', 'http://localhost/public/styles/_headings.scss');
+    client.onreadystatechange = function() {
+      console.log(client.responseText);
+    }
+    client.send();
+
+    // fetch('http://localhost/styles/_headings.scss')
+    // .then(response => response.text())
+    // .then((data) => {
+    //   console.log(data)
+    // });
   }
 
   function init() {

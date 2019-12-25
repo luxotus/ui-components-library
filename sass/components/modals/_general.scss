@@ -16,10 +16,7 @@
   width: 800px;
   background-color: #f8f8f8;
   border-radius: 10px;
-
-  .code-wrapper {
-    background-color: #f0f0f0;
-  }
+  padding: 20px;
 
   code {
     padding: 3%;
@@ -29,8 +26,7 @@
 
   .tabs {
     display: flex;
-    background-color: #fff;
-    padding: 10px 0 0;
+    background-color: #f8f8f8;
 
     button {
       position: relative;
@@ -63,7 +59,7 @@
 
   .tab-content {
     height: calc(100% - 43px);
-    border-left: 1px solid #d3d3d3;
-    border-top: 1px solid #d3d3d3;
+    border: 1px solid #d3d3d3;
+    background-color: #f0f0f0;
   }
 }
