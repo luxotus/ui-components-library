@@ -68,6 +68,10 @@
     padding: 3%;
   }
 
+  code.html {
+    white-space: pre-line;
+  }
+
   $border-colors: #d3d3d3;
 
   .tabs {
@@ -107,5 +111,6 @@
     overflow-y: auto;
     border: 1px solid #d3d3d3;
     background-color: #f0f0f0;
+    white-space: pre-wrap;
   }
 }

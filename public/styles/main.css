@@ -494,6 +494,8 @@ textarea {
     padding: 20px; }
   .general-modal code {
     padding: 3%; }
+  .general-modal code.html {
+    white-space: pre-line; }
   .general-modal .tabs {
     display: flex; }
     .general-modal .tabs button {
@@ -520,10 +522,14 @@ textarea {
     height: 325px;
     overflow-y: auto;
     border: 1px solid #d3d3d3;
-    background-color: #f0f0f0; }
+    background-color: #f0f0f0;
+    white-space: pre-wrap; }
 
 .hide {
   display: none !important; }
+
+.no-scroll {
+  overflow: hidden; }
 
 .main-wrapper {
   min-height: 100vh;
@@ -659,4 +665,7 @@ textarea {
 .hljs-meta-keyword,
 .hljs-doctag,
 .hljs-name {
+  line-height: 16px; }
+
+code.html .hljs-comment .hljs-comment {
   line-height: 16px; }

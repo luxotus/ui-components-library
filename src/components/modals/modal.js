@@ -7,6 +7,7 @@ const modal = (function() {
 
       if (targetEl.classList.contains('general-modal-overlay')) {
         targetEl.classList.add('hide');
+        document.querySelector('body').classList.remove('no-scroll');
       }
     });
   }
@@ -14,6 +15,7 @@ const modal = (function() {
   function handleCloseBtn() {
     document.querySelector('.general-modal header .close-btn').addEventListener('click', () => {
       document.querySelector('.general-modal-overlay').classList.add('hide');
+      document.querySelector('body').classList.remove('no-scroll');
     });
   }
 
@@ -24,6 +26,7 @@ const modal = (function() {
 
         if (overlay.classList.contains('hide')) {
           overlay.classList.remove('hide');
+          document.querySelector('body').classList.add('no-scroll');
           displayCode(event);
         }
       });
