@@ -18,7 +18,7 @@ const modal = (function() {
 
         if (overlay.classList.contains('hide')) {
           overlay.classList.remove('hide');
-          displayHTML(event);
+          displayCode(event);
         }
       });
     })
@@ -44,13 +44,14 @@ const modal = (function() {
     })
   }
 
-  function displayHTML(event) {
+  function displayCode(event) {
     const query = event.currentTarget.getAttribute('data-target');
+    const source = event.currentTarget.getAttribute('data-source');
     const el = event.target.parentElement.parentElement.querySelector(query);
 
     document.querySelector('.general-modal .code-wrapper .html').innerHTML = '';
     document.querySelector('.general-modal .code-wrapper .html').appendChild(document.createTextNode(el.outerHTML));
-    getCodeFromFile('sass/components/typography/_headings.scss', (data) => {
+    getCodeFromFile(source, (data) => {
       document.querySelector('.general-modal .code-wrapper .css').innerHTML = '';
       document.querySelector('.general-modal .code-wrapper .css').innerHTML = data;
       reloadCode();
