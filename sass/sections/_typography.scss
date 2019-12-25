@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, 135px);
     gap: 2vmin;
+    padding-top: 15px;
 
     .font-item {}
 
@@ -14,7 +15,9 @@
 
       button {
         position: absolute;
+        left: 0;
         right: 0;
+        margin: 10px auto 0;
         display: none;
       }
     }

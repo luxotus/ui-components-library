@@ -506,14 +506,17 @@ textarea {
 .typography-sec .font-card-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, 135px);
-  gap: 2vmin; }
+  gap: 2vmin;
+  padding-top: 15px; }
   .typography-sec .font-card-wrapper .view-code {
     position: relative;
     height: 34px;
     width: 100%; }
     .typography-sec .font-card-wrapper .view-code button {
       position: absolute;
+      left: 0;
       right: 0;
+      margin: 10px auto 0;
       display: none; }
   .typography-sec .font-card-wrapper .font-item:hover .view-code button {
     display: block; }
