@@ -13,14 +13,14 @@
   display: grid;
   grid-template-columns: 1fr;
   width: 400px;
-  border-radius: 10px;
-  padding: 15px 20px 20px;
   background-color: #fff;
 
   header {
     display: flex;
     justify-content: space-between;
-    padding: 0 0 15px;
+    align-items: center;
+    padding: 15px 20px 15px;
+    border-bottom: 1px solid #e0e0e0;
 
     h1 {
       font-size: 1.35rem;
@@ -36,11 +36,12 @@
       align-items: center;
       border: none;
       background-color: transparent;
+      opacity: .65;
 
       .x {
         height: 15px;
         width: 2px;
-        background-color: #343434;
+        background-color: #4e4e4e;
         transform: rotateZ(45deg);
       }
 
@@ -49,14 +50,18 @@
         display: block;
         height: 15px;
         width: 2px;
-        background-color: #343434;
+        background-color: #4e4e4e;
         transform: rotateZ(-90deg);
       }
     }
 
     .close-btn:hover {
-      opacity: .75;
+      opacity: 1;
     }
+  }
+
+  .code-wrapper {
+    padding: 20px;
   }
 
   code {
