@@ -9,20 +9,21 @@
     .font-item {}
 
     .view-code {
+      display: none;
       position: relative;
       height: 34px;
       width: 100%;
+      margin-bottom: 10px;
 
       button {
         position: absolute;
         left: 0;
         right: 0;
         margin: 10px auto 0;
-        display: none;
       }
     }
 
-    .font-item:hover .view-code button {
+    .font-item:hover .view-code {
       display: block;
     }
 
@@ -43,11 +44,6 @@
     .details {
       display: grid;
       gap: 1vmin;
-
-      h6 {
-        font-size: 1.25rem;
-        font-weight: 500;
-      }
 
       div {
         display: flex;
