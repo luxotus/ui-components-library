@@ -50,7 +50,11 @@ const modal = (function() {
 
     document.querySelector('.general-modal .code-wrapper .html').innerHTML = '';
     document.querySelector('.general-modal .code-wrapper .html').appendChild(document.createTextNode(el.outerHTML));
-    getStyles();
+    getCodeFromFile('sass/components/typography/_headings.scss', (data) => {
+      document.querySelector('.general-modal .code-wrapper .css').innerHTML = '';
+      document.querySelector('.general-modal .code-wrapper .css').innerHTML = data;
+      reloadCode();
+    });
     reloadCode();
   }
 
@@ -60,19 +64,12 @@ const modal = (function() {
     });
   }
 
-  function getStyles() {
-    var client = new XMLHttpRequest();
-    client.open('GET', 'http://localhost/public/styles/_headings.scss');
-    client.onreadystatechange = function() {
-      console.log(client.responseText);
-    }
-    client.send();
-
-    // fetch('http://localhost/styles/_headings.scss')
-    // .then(response => response.text())
-    // .then((data) => {
-    //   console.log(data)
-    // });
+  function getCodeFromFile(sourceFile, callback) {
+    fetch(sourceFile)
+    .then(response => response.text())
+    .then((data) => {
+      callback(data);
+    });
   }
 
   function init() {
