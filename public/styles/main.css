@@ -563,7 +563,6 @@ textarea {
   gap: 2vmin;
   padding-top: 15px; }
   .typography-sec .font-card-wrapper .view-code {
-    display: none;
     position: relative;
     height: 34px;
     width: 100%;
@@ -572,8 +571,9 @@ textarea {
       position: absolute;
       left: 0;
       right: 0;
+      display: none;
       margin: 10px auto 0; }
-  .typography-sec .font-card-wrapper .font-item:hover .view-code {
+  .typography-sec .font-card-wrapper .font-item:hover .view-code button {
     display: block; }
   .typography-sec .font-card-wrapper .card-short {
     padding: 15px 10px;

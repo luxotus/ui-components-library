@@ -7,7 +7,6 @@
     padding-top: 15px;
 
     .view-code {
-      display: none;
       position: relative;
       height: 34px;
       width: 100%;
@@ -17,11 +16,12 @@
         position: absolute;
         left: 0;
         right: 0;
+        display: none;
         margin: 10px auto 0;
       }
     }
 
-    .font-item:hover .view-code {
+    .font-item:hover .view-code button {
       display: block;
     }
 
