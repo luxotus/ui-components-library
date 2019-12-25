@@ -1,19 +1,77 @@
 .typography-sec {
+
+  .font-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 135px);
+    gap: 2vmin;
+
+    .font-item {}
+
+    .view-code {
+      position: relative;
+      height: 34px;
+      width: 100%;
+
+      button {
+        position: absolute;
+        right: 0;
+        display: none;
+      }
+    }
+
+    .font-item:hover .view-code button {
+      display: block;
+    }
+
+    .card-short {
+      padding: 15px 10px;
+      display: grid;
+      gap: 2vmin;
+      box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.14);
+      background-color: #fff;
+      border-radius: 5px;
+
+      h1 {
+        text-align: center;
+        font-size: 4rem;
+      }
+    }
+
+    .details {
+      display: grid;
+      gap: 1vmin;
+
+      h6 {
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+
+      div {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
   .cards-wrapper {
     display: inline-block;
     padding: 25px 0;
-  }
 
-  .view-code {
-    position: relative;
-    height: 34px;
-    width: $view-code-width;
-    margin-left: $view-code-left;
-
-    button {
-      display: none;
-      position: absolute;
-      right: 0;
+    .view-code {
+      position: relative;
+      height: 34px;
+      width: $view-code-width;
+      margin-left: $view-code-left;
+  
+      button {
+        display: none;
+        position: absolute;
+        right: 0;
+      }
     }
   }
 
