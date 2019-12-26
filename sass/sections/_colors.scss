@@ -1,0 +1,63 @@
+.colors-sec {
+  .colors-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 150px);
+    gap: 5vmin;
+    padding-top: 15px;
+
+    .view-code {
+      position: relative;
+      height: 34px;
+      width: 100%;
+      margin-bottom: 10px;
+
+      button {
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: none;
+        margin: 10px auto 0;
+      }
+    }
+
+    .color-item:hover .view-code button {
+      display: block;
+    }
+
+    .card-short {
+      display: grid;
+      box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.14);
+      background-color: #fff;
+      border-radius: 5px;
+    }
+
+    .color {
+      height: 150px;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .details {
+      display: grid;
+      gap: 1vmin;
+      padding: 15px 10px;
+
+      div {
+        display: grid;
+        gap: 1vmin;
+      }
+
+      p {
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+
+      p:first-child {
+        font-weight: 600;
+      }
+
+      p:nth-child(2) {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
