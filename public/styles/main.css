@@ -882,6 +882,57 @@ section {
     .icon-sec .icon-card-wrapper .details p:nth-child(2) {
       text-transform: uppercase; }
 
+.alerts-sec .alert-wrapper {
+  padding-top: 20px; }
+  .alerts-sec .alert-wrapper .view-code {
+    position: relative;
+    height: 34px;
+    width: 100%;
+    margin-bottom: 10px; }
+    .alerts-sec .alert-wrapper .view-code button {
+      position: absolute;
+      left: 0;
+      display: none;
+      margin: 10px auto 0; }
+  .alerts-sec .alert-wrapper .alert-item:hover .view-code button {
+    display: block; }
+  .alerts-sec .alert-wrapper .alert {
+    display: flex;
+    max-width: 650px;
+    width: 100%; }
+  .alerts-sec .alert-wrapper .alert {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.17); }
+  .alerts-sec .alert-wrapper .alert p {
+    font-size: 15px;
+    font-weight: 500; }
+  .alerts-sec .alert-wrapper .alert .close-alert {
+    border: none;
+    background-color: transparent;
+    opacity: 0.5; }
+  .alerts-sec .alert-wrapper .alert .close-alert:hover {
+    opacity: 1; }
+  .alerts-sec .alert-wrapper .alert .close-alert .icon {
+    display: block;
+    height: 24px;
+    width: 24px; }
+  .alerts-sec .alert-wrapper .alert .close-alert .icon svg {
+    height: 100%;
+    width: 100%;
+    fill: #343434; }
+  .alerts-sec .alert-wrapper .alert-success {
+    background-color: #69dd96; }
+  .alerts-sec .alert-wrapper .alert-info {
+    background-color: #89CAFF; }
+  .alerts-sec .alert-wrapper .alert-warning {
+    background-color: #F5C95D; }
+  .alerts-sec .alert-wrapper .alert-error {
+    background-color: #F26175; }
+
 .hljs-keyword,
 .hljs-attribute,
 .hljs-selector-tag,

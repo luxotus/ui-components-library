@@ -1,0 +1,31 @@
+.alerts-sec {
+  .alert-wrapper {
+    padding-top: 20px;
+
+    .view-code {
+      position: relative;
+      height: 34px;
+      width: 100%;
+      margin-bottom: 10px;
+
+      button {
+        position: absolute;
+        left: 0;
+        display: none;
+        margin: 10px auto 0;
+      }
+    }
+
+    .alert-item:hover .view-code button {
+      display: block;
+    }
+
+    .alert {
+      display: flex;
+      max-width: 650px;
+      width: 100%;
+    }
+
+    @import '../components/alerts/alerts';
+  }
+}
