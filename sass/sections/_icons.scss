@@ -1,0 +1,66 @@
+.icon-sec {
+  .icon-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100px);
+    gap: 5vmin;
+    padding-top: 15px;
+
+    .view-code {
+      position: relative;
+      height: 34px;
+      width: 100%;
+      margin-bottom: 10px;
+
+      button {
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: none;
+        margin: 10px auto 0;
+      }
+    }
+
+    .icon-item:hover .view-code button {
+      display: block;
+    }
+
+    .card {
+      display: grid;
+      justify-content: center;
+      box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.14);
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 10px 0px;
+    }
+
+    .icon {
+      margin: 0 auto;
+      height: 40px;
+      width: 40px;
+    }
+
+    .details {
+      display: grid;
+      gap: 1vmin;
+      padding: 15px 10px 5px;
+
+      div {
+        display: grid;
+        gap: 1vmin;
+      }
+
+      p {
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+
+      p:first-child {
+        font-weight: 600;
+      }
+
+      p:nth-child(2) {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
