@@ -59,23 +59,25 @@ const modal = (function() {
     const dataJS = event.currentTarget.getAttribute('data-js');
     const el = event.target.parentElement.parentElement.querySelector(query);
 
+    // Clearing code sections
+    document.querySelector('.general-modal .code-wrapper .html').innerHTML = '';
+    document.querySelector('.general-modal .code-wrapper .js').innerHTML = '';
+    document.querySelector('.general-modal .code-wrapper .css').innerHTML = '';
+
     // Adding title to modal
     document.querySelector('.general-modal header h1').innerHTML = event.currentTarget.getAttribute('data-title');
 
     // Adding HTML to code section in modal
-    document.querySelector('.general-modal .code-wrapper .html').innerHTML = '';
     document.querySelector('.general-modal .code-wrapper .html').appendChild(document.createTextNode(el.outerHTML));
 
     // Adding CSS to the code section in modal
     getCodeFromFile(dataCSS, (data) => {
-      document.querySelector('.general-modal .code-wrapper .css').innerHTML = '';
       document.querySelector('.general-modal .code-wrapper .css').innerHTML = data;
       reloadCode();
     });
 
     if (dataJS !== null) {
       getCodeFromFile(dataJS, (data) => {
-        document.querySelector('.general-modal .code-wrapper .js').innerHTML = '';
         document.querySelector('.general-modal .code-wrapper .js').innerHTML = data;
         reloadCode();
       });
