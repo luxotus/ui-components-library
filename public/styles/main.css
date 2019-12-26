@@ -833,8 +833,8 @@ section {
 
 .icon-sec .icon-card-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 100px);
-  gap: 5vmin;
+  grid-template-columns: repeat(auto-fit, 125px);
+  gap: 3vmin;
   padding-top: 15px; }
   .icon-sec .icon-card-wrapper .view-code {
     position: relative;
@@ -855,20 +855,27 @@ section {
     box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.14);
     background-color: #fff;
     border-radius: 5px;
-    padding: 10px 0px; }
-  .icon-sec .icon-card-wrapper .icon {
+    padding: 17px 0px;
+    gap: 2vmin; }
+  .icon-sec .icon-card-wrapper div.icon {
     margin: 0 auto;
     height: 40px;
     width: 40px; }
+  .icon-sec .icon-card-wrapper .icon {
+    height: 24px;
+    width: 24px; }
+  .icon-sec .icon-card-wrapper .icon svg {
+    height: 100%;
+    width: 100%;
+    fill: #343434; }
   .icon-sec .icon-card-wrapper .details {
     display: grid;
-    gap: 1vmin;
-    padding: 15px 10px 5px; }
+    text-align: center; }
     .icon-sec .icon-card-wrapper .details div {
       display: grid;
       gap: 1vmin; }
     .icon-sec .icon-card-wrapper .details p {
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: 500; }
     .icon-sec .icon-card-wrapper .details p:first-child {
       font-weight: 600; }

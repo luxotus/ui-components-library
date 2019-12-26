@@ -2155,6 +2155,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var high
 
 /***/ }),
 
+/***/ "./src/components/svgs/icons.js":
+/*!**************************************!*\
+  !*** ./src/components/svgs/icons.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar icons = function () {\n  /**\n   * Source but has slight modifications: https://codepen.io/eltonmesquita/post/loading-inline-svg\n   * Note: Just for this site, having a backend can easily load in html directly without this workaround.\n   * And yes I know about using <object></object> but that method prevents styling on svg\n   */\n  function loadSvg(target, url) {\n    if (typeof SVGRect != 'undefined') {\n      // Request the SVG file\n      var ajax = new XMLHttpRequest();\n      ajax.open('GET', url, true);\n      ajax.send(); // Append the SVG to the target\n\n      ajax.onload = function () {\n        target.innerHTML = ajax.responseText;\n      };\n    }\n  }\n\n  function init() {\n    document.querySelectorAll('.icon-sec .icon-card-wrapper .card .icon').forEach(function (el) {\n      loadSvg(el, el.getAttribute('data-source'));\n    });\n  }\n\n  return {\n    init: init\n  };\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (icons);\n\n//# sourceURL=webpack:///./src/components/svgs/icons.js?");
+
+/***/ }),
+
 /***/ "./src/components/typography/typography.js":
 /*!*************************************************!*\
   !*** ./src/components/typography/typography.js ***!
@@ -2175,7 +2187,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar typography = function () 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_typography_typography__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/typography/typography */ \"./src/components/typography/typography.js\");\n/* harmony import */ var _components_modals_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/modals/modal */ \"./src/components/modals/modal.js\");\n\n\n_components_typography_typography__WEBPACK_IMPORTED_MODULE_0__[\"default\"].init();\n_components_modals_modal__WEBPACK_IMPORTED_MODULE_1__[\"default\"].init();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_typography_typography__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/typography/typography */ \"./src/components/typography/typography.js\");\n/* harmony import */ var _components_modals_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/modals/modal */ \"./src/components/modals/modal.js\");\n/* harmony import */ var _components_svgs_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/svgs/icons */ \"./src/components/svgs/icons.js\");\n\n\n\n_components_typography_typography__WEBPACK_IMPORTED_MODULE_0__[\"default\"].init();\n_components_modals_modal__WEBPACK_IMPORTED_MODULE_1__[\"default\"].init();\n_components_svgs_icons__WEBPACK_IMPORTED_MODULE_2__[\"default\"].init();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
