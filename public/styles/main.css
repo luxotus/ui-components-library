@@ -735,6 +735,12 @@ textarea {
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.14);
   background-color: #fff;
   border-radius: 8px; }
+  .typography-sec .card-long .other {
+    max-width: 500px; }
+    .typography-sec .card-long .other p {
+      font-size: 14px;
+      line-height: 19px;
+      font-weight: 400; }
   .typography-sec .card-long .lower-details {
     display: flex;
     justify-content: space-between;

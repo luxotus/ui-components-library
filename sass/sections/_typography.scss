@@ -81,6 +81,12 @@
     background-color: #fff;
     border-radius: 8px;
 
+    .other {
+      max-width: 500px;
+
+      @import '../components/typography/paragraph';
+    }
+
     .lower-details {
       display: flex;
       justify-content: space-between;
