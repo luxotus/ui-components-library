@@ -684,7 +684,7 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, 135px);
   gap: 2vmin;
-  padding-top: 15px; }
+  padding-top: 20px; }
   .typography-sec .font-card-wrapper .view-code {
     position: relative;
     height: 34px;
@@ -794,7 +794,7 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, 150px);
   gap: 5vmin;
-  padding-top: 15px; }
+  padding-top: 20px; }
   .colors-sec .colors-card-wrapper .view-code {
     position: relative;
     height: 34px;
@@ -835,7 +835,7 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, 125px);
   gap: 3vmin;
-  padding-top: 15px; }
+  padding-top: 20px; }
   .icon-sec .icon-card-wrapper .view-code {
     position: relative;
     height: 34px;
