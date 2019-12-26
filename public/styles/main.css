@@ -614,8 +614,6 @@ textarea {
     padding: 20px; }
   .general-modal code {
     padding: 3%; }
-  .general-modal code.html {
-    white-space: pre-line; }
   .general-modal .tabs {
     display: flex; }
     .general-modal .tabs button {
@@ -883,6 +881,8 @@ section {
       text-transform: uppercase; }
 
 .alerts-sec .alert-wrapper {
+  display: grid;
+  gap: 2.25vmin;
   padding-top: 20px; }
   .alerts-sec .alert-wrapper .view-code {
     position: relative;
@@ -908,8 +908,10 @@ section {
     border-radius: 5px;
     box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.17); }
   .alerts-sec .alert-wrapper .alert p {
+    line-height: 20px;
     font-size: 15px;
-    font-weight: 500; }
+    font-weight: 500;
+    color: #262626; }
   .alerts-sec .alert-wrapper .alert .close-alert {
     border: none;
     background-color: transparent;
@@ -923,7 +925,7 @@ section {
   .alerts-sec .alert-wrapper .alert .close-alert .icon svg {
     height: 100%;
     width: 100%;
-    fill: #343434; }
+    fill: #262626; }
   .alerts-sec .alert-wrapper .alert-success {
     background-color: #69dd96; }
   .alerts-sec .alert-wrapper .alert-info {

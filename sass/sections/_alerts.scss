@@ -1,5 +1,7 @@
 .alerts-sec {
   .alert-wrapper {
+    display: grid;
+    gap: 2.25vmin;
     padding-top: 20px;
 
     .view-code {

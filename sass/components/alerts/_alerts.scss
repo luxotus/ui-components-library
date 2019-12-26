@@ -8,8 +8,10 @@
 }
 
 .alert p {
+  line-height: 20px;
   font-size: 15px;
   font-weight: 500;
+  color: #262626;
 }
 
 .alert .close-alert {
@@ -31,7 +33,7 @@
 .alert .close-alert .icon svg {
   height: 100%;
   width: 100%;
-  fill: #343434;
+  fill: #262626;
 }
 
 .alert-success {
