@@ -74,7 +74,6 @@
 
   .card-long {
     position: relative;
-    min-width: calc(100% - #{$view-code-width + $view-code-left});
     padding: 20px;
     margin-top: 10px;
     box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.14);
