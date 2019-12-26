@@ -56,6 +56,7 @@ const modal = (function() {
   function displayCode(event) {
     const query = event.currentTarget.getAttribute('data-target');
     const dataCSS = event.currentTarget.getAttribute('data-css');
+    const dataJS = event.currentTarget.getAttribute('data-js');
     const el = event.target.parentElement.parentElement.querySelector(query);
 
     // Adding title to modal
@@ -71,6 +72,15 @@ const modal = (function() {
       document.querySelector('.general-modal .code-wrapper .css').innerHTML = data;
       reloadCode();
     });
+
+    if (dataJS !== null) {
+      getCodeFromFile(dataJS, (data) => {
+        document.querySelector('.general-modal .code-wrapper .js').innerHTML = '';
+        document.querySelector('.general-modal .code-wrapper .js').innerHTML = data;
+        reloadCode();
+      });
+    }
+
     reloadCode();
   }
 
