@@ -2155,6 +2155,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var high
 
 /***/ }),
 
+/***/ "./src/components/notifications/alert.js":
+/*!***********************************************!*\
+  !*** ./src/components/notifications/alert.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar alert = function () {\n  function handleCloseAlertBtn() {\n    document.querySelectorAll('.alert .close-alert').forEach(function (btn) {\n      btn.addEventListener('click', function (event) {\n        event.currentTarget.parentElement.remove();\n      });\n    });\n  }\n\n  function init() {\n    handleCloseAlertBtn();\n  }\n\n  return {\n    init: init\n  };\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (alert);\n\n//# sourceURL=webpack:///./src/components/notifications/alert.js?");
+
+/***/ }),
+
 /***/ "./src/components/svgs/icons.js":
 /*!**************************************!*\
   !*** ./src/components/svgs/icons.js ***!
@@ -2187,7 +2199,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar typography = function () 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_typography_typography__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/typography/typography */ \"./src/components/typography/typography.js\");\n/* harmony import */ var _components_modals_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/modals/modal */ \"./src/components/modals/modal.js\");\n/* harmony import */ var _components_svgs_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/svgs/icons */ \"./src/components/svgs/icons.js\");\n\n\n\n_components_typography_typography__WEBPACK_IMPORTED_MODULE_0__[\"default\"].init();\n_components_modals_modal__WEBPACK_IMPORTED_MODULE_1__[\"default\"].init();\n_components_svgs_icons__WEBPACK_IMPORTED_MODULE_2__[\"default\"].init();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_typography_typography__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/typography/typography */ \"./src/components/typography/typography.js\");\n/* harmony import */ var _components_modals_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/modals/modal */ \"./src/components/modals/modal.js\");\n/* harmony import */ var _components_svgs_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/svgs/icons */ \"./src/components/svgs/icons.js\");\n/* harmony import */ var _components_notifications_alert__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/notifications/alert */ \"./src/components/notifications/alert.js\");\n\n\n\n\n_components_typography_typography__WEBPACK_IMPORTED_MODULE_0__[\"default\"].init();\n_components_modals_modal__WEBPACK_IMPORTED_MODULE_1__[\"default\"].init();\n_components_svgs_icons__WEBPACK_IMPORTED_MODULE_2__[\"default\"].init();\n_components_notifications_alert__WEBPACK_IMPORTED_MODULE_3__[\"default\"].init();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
