@@ -740,6 +740,9 @@ textarea {
       font-size: 14px;
       line-height: 19px;
       font-weight: 400; }
+    .typography-sec .card-long .other label {
+      font-size: 16px;
+      font-weight: 500; }
   .typography-sec .card-long .lower-details {
     display: flex;
     justify-content: space-between;
