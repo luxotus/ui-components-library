@@ -50,3 +50,19 @@
 .btn-default:focus {
   background-color: #b0b0b0;
 }
+
+
+.btn-outline {
+  border: 1px solid #343434;
+  background-color: transparent;
+}
+.btn-outline:hover {
+  border-color: #3A6EA5;
+  color: #3A6EA5;
+}
+
+.btn-outline:focus {
+  border-color: #3A6EA5;
+  color: #3A6EA5;
+  background-color: #ededed;
+}
