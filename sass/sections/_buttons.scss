@@ -1,0 +1,49 @@
+.buttons-sec {
+
+  .buttons-wrapper {
+    padding-top: 20px;
+
+    .view-code {
+      position: relative;
+      height: 34px;
+      width: 100%;
+      margin-bottom: 10px;
+
+      button {
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: none;
+        margin: 10px auto 0;
+      }
+    }
+
+    .button-item:hover .view-code button {
+      display: block;
+    }
+
+    .button-item {
+      display: inline-block;
+      margin-right: 20px;
+
+      .btn {
+        letter-spacing: 0.5px;
+      }
+    }
+
+    .button-item:nth-child(2) .btn {
+      background-color: #356497;
+    }
+
+    .button-item:nth-child(3) .btn {
+      background-color: #284b71;
+    }
+
+    .button-item:nth-child(4) .btn {
+      opacity: .5;
+      cursor: default;
+    }
+  }
+
+  @import '../components/buttons/btns';
+}

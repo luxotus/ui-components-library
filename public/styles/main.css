@@ -935,6 +935,62 @@ section {
   .alerts-sec .alert-wrapper .alert-error {
     background-color: #F26175; }
 
+.buttons-sec .buttons-wrapper {
+  padding-top: 20px; }
+  .buttons-sec .buttons-wrapper .view-code {
+    position: relative;
+    height: 34px;
+    width: 100%;
+    margin-bottom: 10px; }
+    .buttons-sec .buttons-wrapper .view-code button {
+      position: absolute;
+      left: 0;
+      right: 0;
+      display: none;
+      margin: 10px auto 0; }
+  .buttons-sec .buttons-wrapper .button-item:hover .view-code button {
+    display: block; }
+  .buttons-sec .buttons-wrapper .button-item {
+    display: inline-block;
+    margin-right: 20px; }
+    .buttons-sec .buttons-wrapper .button-item .btn {
+      letter-spacing: 0.5px; }
+  .buttons-sec .buttons-wrapper .button-item:nth-child(2) .btn {
+    background-color: #356497; }
+  .buttons-sec .buttons-wrapper .button-item:nth-child(3) .btn {
+    background-color: #284b71; }
+  .buttons-sec .buttons-wrapper .button-item:nth-child(4) .btn {
+    opacity: .5;
+    cursor: default; }
+
+.buttons-sec .btn {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #343434;
+  background-color: #FFFFFF; }
+
+.buttons-sec .btn-primary {
+  background-color: #3A6EA5;
+  color: #ffffff; }
+
+.buttons-sec .btn-primary:hover {
+  background-color: #356497; }
+
+.buttons-sec .btn-primary:focus {
+  background-color: #284b71; }
+
+.buttons-sec .btn-primary:disabled {
+  opacity: .5;
+  cursor: default; }
+
+.buttons-sec .btn-secondary {
+  background-color: #FFB870; }
+
+.buttons-sec .btn-default {
+  background-color: #DEDEDE; }
+
 .hljs-keyword,
 .hljs-attribute,
 .hljs-selector-tag,
