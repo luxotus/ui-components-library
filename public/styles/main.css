@@ -977,6 +977,11 @@ section {
     border-color: #3A6EA5;
     color: #3A6EA5;
     background-color: #ededed; }
+  .buttons-sec .buttons-wrapper .button-item:nth-child(2) .btn-transparent {
+    background-color: transparent;
+    color: #535353; }
+  .buttons-sec .buttons-wrapper .button-item:nth-child(3) .btn-transparent {
+    color: #343434; }
   .buttons-sec .buttons-wrapper .button-item:nth-child(4) .btn {
     opacity: .5;
     cursor: default; }
@@ -1033,6 +1038,16 @@ section {
   border-color: #3A6EA5;
   color: #3A6EA5;
   background-color: #ededed; }
+
+.buttons-sec .btn-transparent {
+  background-color: transparent;
+  color: #727272; }
+
+.buttons-sec .btn-transparent:hover {
+  color: #535353; }
+
+.buttons-sec .btn-transparent:focus {
+  color: #343434; }
 
 .hljs-keyword,
 .hljs-attribute,

@@ -42,6 +42,7 @@
       background-color: #284b71;
     }
 
+
     .button-item:nth-child(2) .btn-secondary {
       background-color: #ffab57;
     }
@@ -50,6 +51,7 @@
       background-color: #ff9933;
     }
 
+
     .button-item:nth-child(2) .btn-default {
       background-color: #c3c2c2;
     }
@@ -57,6 +59,7 @@
     .button-item:nth-child(3) .btn-default {
       background-color: #b0b0b0;
     }
+
 
     .button-item:nth-child(2) .btn-outline {
       border-color: #3A6EA5;
@@ -68,6 +71,17 @@
       color: #3A6EA5;
       background-color: #ededed;
     }
+
+
+    .button-item:nth-child(2) .btn-transparent {
+      background-color: transparent;
+      color: #535353;
+    }
+
+    .button-item:nth-child(3) .btn-transparent {
+      color: #343434;
+    }
+
 
     .button-item:nth-child(4) .btn {
       opacity: .5;

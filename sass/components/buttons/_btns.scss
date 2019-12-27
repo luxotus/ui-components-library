@@ -66,3 +66,16 @@
   color: #3A6EA5;
   background-color: #ededed;
 }
+
+
+.btn-transparent {
+  background-color: transparent;
+  color: #727272;
+}
+.btn-transparent:hover {
+  color: #535353;
+}
+
+.btn-transparent:focus {
+  color: #343434;
+}
