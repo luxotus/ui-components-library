@@ -7,6 +7,12 @@
   background-color: #FFFFFF;
 }
 
+.btn:disabled {
+  opacity: .5;
+  cursor: default;
+}
+
+
 .btn-primary {
   background-color: #3A6EA5;
   color: #ffffff;
@@ -20,15 +26,27 @@
   background-color: #284b71;
 }
 
-.btn-primary:disabled {
-  opacity: .5;
-  cursor: default;
-}
 
 .btn-secondary {
   background-color: #FFB870;
 }
 
+.btn-secondary:hover {
+  background-color: #ffab57;
+}
+
+.btn-secondary:focus {
+  background-color: #ff9933;
+}
+
+
 .btn-default {
   background-color: #DEDEDE;
+}
+.btn-default:hover {
+  background-color: #c3c2c2;
+}
+
+.btn-default:focus {
+  background-color: #b0b0b0;
 }

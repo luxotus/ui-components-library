@@ -31,12 +31,28 @@
       }
     }
 
-    .button-item:nth-child(2) .btn {
+    .button-item:nth-child(2) .btn-primary {
       background-color: #356497;
     }
 
-    .button-item:nth-child(3) .btn {
+    .button-item:nth-child(3) .btn-primary {
       background-color: #284b71;
+    }
+
+    .button-item:nth-child(2) .btn-secondary {
+      background-color: #ffab57;
+    }
+
+    .button-item:nth-child(3) .btn-secondary {
+      background-color: #ff9933;
+    }
+
+    .button-item:nth-child(2) .btn-default {
+      background-color: #c3c2c2;
+    }
+
+    .button-item:nth-child(3) .btn-default {
+      background-color: #b0b0b0;
     }
 
     .button-item:nth-child(4) .btn {
