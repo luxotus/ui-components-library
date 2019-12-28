@@ -44,7 +44,7 @@
   opacity: .5;
 }
 
-.search-wrapper input:focus + .reset-input {
+.search-wrapper input.has-text + .reset-input {
   display: flex;
 }
 

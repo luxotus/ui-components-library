@@ -2143,6 +2143,18 @@ eval("module.exports = function(hljs) {\n  var STRING = {\n    className: 'strin
 
 /***/ }),
 
+/***/ "./src/components/form-inputs/search-input.js":
+/*!****************************************************!*\
+  !*** ./src/components/form-inputs/search-input.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar searchInput = function () {\n  function handleInputReset() {\n    document.querySelectorAll('.search-wrapper .reset-input').forEach(function (resetBtn) {\n      resetBtn.addEventListener('click', function (event) {\n        var inputEl = event.currentTarget.parentElement.querySelector('input[type=\"text\"]');\n        inputEl.value = '';\n        inputEl.dispatchEvent(new Event('keyup'));\n      });\n    });\n  }\n\n  function handleInputTextChange() {\n    document.querySelectorAll('.search-wrapper input[type=\"text\"]').forEach(function (inputEl) {\n      inputEl.addEventListener('keyup', function (event) {\n        var el = event.currentTarget;\n\n        if (el.value !== '' && !el.classList.contains('has-text')) {\n          el.classList.add('has-text');\n        } else if (el.value === '' && el.classList.contains('has-text')) {\n          el.classList.remove('has-text');\n        }\n      });\n    });\n  }\n\n  function init() {\n    handleInputTextChange();\n    handleInputReset();\n  }\n\n  return {\n    init: init\n  };\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (searchInput);\n\n//# sourceURL=webpack:///./src/components/form-inputs/search-input.js?");
+
+/***/ }),
+
 /***/ "./src/components/modals/modal.js":
 /*!****************************************!*\
   !*** ./src/components/modals/modal.js ***!
@@ -2179,18 +2191,6 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar icons = function () {\n  
 
 /***/ }),
 
-/***/ "./src/components/typography/typography.js":
-/*!*************************************************!*\
-  !*** ./src/components/typography/typography.js ***!
-  \*************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nvar typography = function () {\n  function init() {\n    console.log('here');\n  }\n\n  return {\n    init: init\n  };\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (typography);\n\n//# sourceURL=webpack:///./src/components/typography/typography.js?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -2199,7 +2199,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar typography = function () 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_typography_typography__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/typography/typography */ \"./src/components/typography/typography.js\");\n/* harmony import */ var _components_modals_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/modals/modal */ \"./src/components/modals/modal.js\");\n/* harmony import */ var _components_svgs_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/svgs/icons */ \"./src/components/svgs/icons.js\");\n/* harmony import */ var _components_notifications_alert__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/notifications/alert */ \"./src/components/notifications/alert.js\");\n\n\n\n\n_components_typography_typography__WEBPACK_IMPORTED_MODULE_0__[\"default\"].init();\n_components_modals_modal__WEBPACK_IMPORTED_MODULE_1__[\"default\"].init();\n_components_svgs_icons__WEBPACK_IMPORTED_MODULE_2__[\"default\"].init();\n_components_notifications_alert__WEBPACK_IMPORTED_MODULE_3__[\"default\"].init();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_modals_modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/modals/modal */ \"./src/components/modals/modal.js\");\n/* harmony import */ var _components_svgs_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/svgs/icons */ \"./src/components/svgs/icons.js\");\n/* harmony import */ var _components_notifications_alert__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/notifications/alert */ \"./src/components/notifications/alert.js\");\n/* harmony import */ var _components_form_inputs_search_input__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/form-inputs/search-input */ \"./src/components/form-inputs/search-input.js\");\n\n\n\n\n_components_modals_modal__WEBPACK_IMPORTED_MODULE_0__[\"default\"].init();\n_components_svgs_icons__WEBPACK_IMPORTED_MODULE_1__[\"default\"].init();\n_components_notifications_alert__WEBPACK_IMPORTED_MODULE_2__[\"default\"].init();\n_components_form_inputs_search_input__WEBPACK_IMPORTED_MODULE_3__[\"default\"].init();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
