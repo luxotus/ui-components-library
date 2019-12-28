@@ -46,8 +46,24 @@
         background-color: #48a1ff;
       }
     }
+
+    .toggle-switch-wrapper {
+      display: flex;
+      align-items: center;
+
+      p {
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 10px;
+      }
+    }
+
+    .toggle-switch-wrapper:not(:last-child) {
+      margin-bottom: 15px;
+    }
   }
 
   @import '../components/form-inputs/checkbox';
   @import '../components/form-inputs/radio';
+  @import '../components/form-inputs/toggle-switch';
 }
