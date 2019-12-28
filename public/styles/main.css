@@ -1156,10 +1156,14 @@ section {
   background-color: #3A6EA5;
   border-color: #3A6EA5; }
 
-.form-inputs-sec .checkbox input[type="checkbox"]:hover + label::before {
+.form-inputs-sec .checkbox input[type="checkbox"]:disabled + label::before,
+.form-inputs-sec .checkbox input[type="checkbox"]:disabled + label::after {
+  opacity: .35; }
+
+.form-inputs-sec .checkbox input[type="checkbox"]:hover:not(:disabled) + label::before {
   border-color: #3A6EA5; }
 
-.form-inputs-sec .checkbox input[type="checkbox"]:hover + label {
+.form-inputs-sec .checkbox input[type="checkbox"]:hover:not(:disabled) + label {
   color: #3A6EA5; }
 
 .form-inputs-sec .radio {

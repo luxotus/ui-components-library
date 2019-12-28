@@ -78,10 +78,15 @@
   border-color: #3A6EA5;
 }
 
-.checkbox input[type="checkbox"]:hover + label::before {
+.checkbox input[type="checkbox"]:disabled + label::before,
+.checkbox input[type="checkbox"]:disabled + label::after {
+  opacity: .35;
+}
+
+.checkbox input[type="checkbox"]:hover:not(:disabled) + label::before {
   border-color: #3A6EA5;
 }
 
-.checkbox input[type="checkbox"]:hover + label {
+.checkbox input[type="checkbox"]:hover:not(:disabled) + label {
   color: #3A6EA5;
 }
