@@ -1062,7 +1062,6 @@ section {
     .form-inputs-sec .form-input-wrapper .view-code button {
       position: absolute;
       left: 0;
-      right: 0;
       display: none;
       margin: 10px auto 0; }
   .form-inputs-sec .form-input-wrapper .form-input-item:hover .view-code button {
