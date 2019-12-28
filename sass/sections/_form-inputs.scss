@@ -45,6 +45,14 @@
       .radio:nth-child(2) input + span:before {
         background-color: #48a1ff;
       }
+
+      input[type="text"] {
+        display: block;
+      }
+
+      input[type="text"]:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
 
     .toggle-switch-wrapper {
@@ -66,4 +74,5 @@
   @import '../components/form-inputs/checkbox';
   @import '../components/form-inputs/radio';
   @import '../components/form-inputs/toggle-switch';
+  @import '../components/form-inputs/text-input';
 }
