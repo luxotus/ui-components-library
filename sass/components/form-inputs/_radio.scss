@@ -34,7 +34,8 @@
   padding-left: 30px;
 }
 
-.radio input + span:before, .radio input + span:after {
+.radio input + span:before,
+.radio input + span:after {
   content: '';
   width: 22px;
   height: 22px;
@@ -43,6 +44,11 @@
   left: 0;
   top: 0;
   position: absolute;
+}
+
+.radio input:disabled + span:before,
+.radio input:disabled + span:after {
+  opacity: .5;
 }
 
 .radio input + span:before {
@@ -63,7 +69,7 @@
   transition: transform .3s ease;
 }
 
-.radio:hover input + span:before {
+.radio:hover input:not(:disabled) + span:before {
   background-color: #48a1ff;
 }
 

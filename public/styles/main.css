@@ -1191,7 +1191,8 @@ section {
 .form-inputs-sec .radio input + span:not(:empty) {
   padding-left: 30px; }
 
-.form-inputs-sec .radio input + span:before, .form-inputs-sec .radio input + span:after {
+.form-inputs-sec .radio input + span:before,
+.form-inputs-sec .radio input + span:after {
   content: '';
   width: 22px;
   height: 22px;
@@ -1200,6 +1201,10 @@ section {
   left: 0;
   top: 0;
   position: absolute; }
+
+.form-inputs-sec .radio input:disabled + span:before,
+.form-inputs-sec .radio input:disabled + span:after {
+  opacity: .5; }
 
 .form-inputs-sec .radio input + span:before {
   background-color: #D1D7E3; }
@@ -1215,7 +1220,7 @@ section {
   transform: scale(0.4);
   transition: transform .3s ease; }
 
-.form-inputs-sec .radio:hover input + span:before {
+.form-inputs-sec .radio:hover input:not(:disabled) + span:before {
   background-color: #48a1ff; }
 
 .form-inputs-sec .radio:hover input:checked + span:before {
