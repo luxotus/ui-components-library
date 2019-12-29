@@ -1468,6 +1468,18 @@ section {
 .form-inputs-sec .password-wrapper .show-password .visible-off {
   display: block; }
 
+.form-inputs-sec textarea {
+  height: 150px;
+  width: 250px;
+  resize: none;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+  font-size: 17px;
+  font-family: inherit;
+  color: #343434;
+  box-sizing: border-box;
+  padding: 5px 10px 0; }
+
 .hljs-keyword,
 .hljs-attribute,
 .hljs-selector-tag,
