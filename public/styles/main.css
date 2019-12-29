@@ -1396,6 +1396,67 @@ section {
   width: 18px;
   fill: #343434; }
 
+.form-inputs-sec .password-wrapper {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  height: 40px;
+  width: 300px;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px; }
+
+.form-inputs-sec .password-wrapper input {
+  height: 100%;
+  width: calc(100% - 35px);
+  text-indent: 15px;
+  font-size: 17px;
+  font-family: inherit;
+  color: #343434;
+  border-radius: 5px 0 0 5px; }
+
+.form-inputs-sec .password-wrapper input[type="password"] {
+  font-family: caption;
+  font-size: 24px; }
+
+.form-inputs-sec .password-wrapper input[type="password"]::placeholder {
+  font-size: 17px;
+  font-family: Montserrat;
+  transform: translateY(-2px); }
+
+.form-inputs-sec .password-wrapper .view-eye {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  width: 35px;
+  background-color: transparent;
+  opacity: .5; }
+
+.form-inputs-sec .password-wrapper .view-eye:hover {
+  opacity: 1; }
+
+.form-inputs-sec .password-wrapper .icon {
+  height: 18px;
+  width: 18px; }
+
+.form-inputs-sec .password-wrapper .icon svg {
+  height: 18px;
+  width: 18px;
+  fill: #343434; }
+
+.form-inputs-sec .password-wrapper .view-eye .visible-on {
+  display: block; }
+
+.form-inputs-sec .password-wrapper .view-eye .visible-off {
+  display: none; }
+
+.form-inputs-sec .password-wrapper .show-password .visible-on {
+  display: none; }
+
+.form-inputs-sec .password-wrapper .show-password .visible-off {
+  display: block; }
+
 .hljs-keyword,
 .hljs-attribute,
 .hljs-selector-tag,

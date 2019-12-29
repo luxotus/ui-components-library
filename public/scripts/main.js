@@ -2143,6 +2143,18 @@ eval("module.exports = function(hljs) {\n  var STRING = {\n    className: 'strin
 
 /***/ }),
 
+/***/ "./src/components/form-inputs/password-input.js":
+/*!******************************************************!*\
+  !*** ./src/components/form-inputs/password-input.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar passwordInput = function () {\n  function handleViewPassword() {\n    document.querySelectorAll('.password-wrapper .view-eye').forEach(function (viewBtn) {\n      viewBtn.addEventListener('click', function (event) {\n        var elBtn = event.currentTarget;\n        var inputEl = elBtn.parentElement.querySelector('input');\n        inputEl.setAttribute('type', inputEl.getAttribute('type') === 'password' ? 'text' : 'password');\n\n        if (elBtn.classList.contains('show-password')) {\n          elBtn.classList.remove('show-password');\n        } else {\n          elBtn.classList.add('show-password');\n        }\n      });\n    });\n  }\n\n  function init() {\n    handleViewPassword();\n  }\n\n  return {\n    init: init\n  };\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (passwordInput);\n\n//# sourceURL=webpack:///./src/components/form-inputs/password-input.js?");
+
+/***/ }),
+
 /***/ "./src/components/form-inputs/search-input.js":
 /*!****************************************************!*\
   !*** ./src/components/form-inputs/search-input.js ***!
@@ -2199,7 +2211,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar icons = function () {\n  
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_modals_modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/modals/modal */ \"./src/components/modals/modal.js\");\n/* harmony import */ var _components_svgs_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/svgs/icons */ \"./src/components/svgs/icons.js\");\n/* harmony import */ var _components_notifications_alert__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/notifications/alert */ \"./src/components/notifications/alert.js\");\n/* harmony import */ var _components_form_inputs_search_input__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/form-inputs/search-input */ \"./src/components/form-inputs/search-input.js\");\n\n\n\n\n_components_modals_modal__WEBPACK_IMPORTED_MODULE_0__[\"default\"].init();\n_components_svgs_icons__WEBPACK_IMPORTED_MODULE_1__[\"default\"].init();\n_components_notifications_alert__WEBPACK_IMPORTED_MODULE_2__[\"default\"].init();\n_components_form_inputs_search_input__WEBPACK_IMPORTED_MODULE_3__[\"default\"].init();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_modals_modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/modals/modal */ \"./src/components/modals/modal.js\");\n/* harmony import */ var _components_svgs_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/svgs/icons */ \"./src/components/svgs/icons.js\");\n/* harmony import */ var _components_notifications_alert__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/notifications/alert */ \"./src/components/notifications/alert.js\");\n/* harmony import */ var _components_form_inputs_search_input__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/form-inputs/search-input */ \"./src/components/form-inputs/search-input.js\");\n/* harmony import */ var _components_form_inputs_password_input__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/form-inputs/password-input */ \"./src/components/form-inputs/password-input.js\");\n\n\n\n\n\n_components_modals_modal__WEBPACK_IMPORTED_MODULE_0__[\"default\"].init();\n_components_svgs_icons__WEBPACK_IMPORTED_MODULE_1__[\"default\"].init();\n_components_notifications_alert__WEBPACK_IMPORTED_MODULE_2__[\"default\"].init();\n_components_form_inputs_search_input__WEBPACK_IMPORTED_MODULE_3__[\"default\"].init();\n_components_form_inputs_password_input__WEBPACK_IMPORTED_MODULE_4__[\"default\"].init();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
