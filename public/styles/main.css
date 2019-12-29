@@ -1093,6 +1093,8 @@ section {
       margin-left: 10px; }
   .form-inputs-sec .form-input-wrapper .toggle-switch-wrapper:not(:last-child) {
     margin-bottom: 15px; }
+  .form-inputs-sec .form-input-wrapper .password-wrapper:not(:last-child) {
+    margin-bottom: 15px; }
 
 .form-inputs-sec .checkbox {
   height: 18px;
@@ -1413,6 +1415,15 @@ section {
   font-family: inherit;
   color: #343434;
   border-radius: 5px 0 0 5px; }
+
+.form-inputs-sec .password-wrapper.error {
+  border-color: #F26175; }
+
+.form-inputs-sec .password-wrapper.error .view-eye svg {
+  fill: #F26175; }
+
+.form-inputs-sec .password-wrapper.error input[type="password"] {
+  color: #F26175; }
 
 .form-inputs-sec .password-wrapper input[type="password"] {
   font-family: caption;

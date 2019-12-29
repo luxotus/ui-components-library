@@ -69,6 +69,10 @@
     .toggle-switch-wrapper:not(:last-child) {
       margin-bottom: 15px;
     }
+
+    .password-wrapper:not(:last-child) {
+      margin-bottom: 15px;
+    }
   }
 
   @import '../components/form-inputs/checkbox';
