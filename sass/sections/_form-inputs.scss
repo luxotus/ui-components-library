@@ -73,6 +73,10 @@
     .password-wrapper:not(:last-child) {
       margin-bottom: 15px;
     }
+
+    .custom-select {
+      width: 200px;
+    }
   }
 
   @import '../components/form-inputs/checkbox';
@@ -82,4 +86,5 @@
   @import '../components/form-inputs/search-input';
   @import '../components/form-inputs/password-input';
   @import '../components/form-inputs/textarea';
+  @import '../components/form-inputs/select-list';
 }
