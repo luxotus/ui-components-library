@@ -1388,10 +1388,12 @@ section {
   opacity: 1; }
 
 .form-inputs-sec .search-wrapper .icon.x {
-  height: 22px;
-  width: 22px; }
+  height: 18px;
+  width: 18px; }
 
 .form-inputs-sec .search-wrapper .icon.x svg {
+  height: 18px;
+  width: 18px;
   fill: #343434; }
 
 .hljs-keyword,
