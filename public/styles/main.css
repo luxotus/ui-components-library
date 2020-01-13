@@ -1783,9 +1783,58 @@ section {
   font-family: inherit; }
 
 .navigation-sec footer {
-  height: 50px;
   width: 100%;
-  background-color: #292929; }
+  background-color: #292929;
+  color: #fff; }
+
+.navigation-sec .upper-footer {
+  display: grid;
+  grid-template-columns: .3fr 1fr;
+  align-items: center;
+  padding: 75px 25px; }
+
+.navigation-sec .lower-footer {
+  padding: 25px;
+  background-color: #4a4a4a; }
+
+.navigation-sec footer .logo-social {
+  display: grid;
+  gap: 2vmin;
+  justify-content: center; }
+
+.navigation-sec footer .logo-social img {
+  height: 75px;
+  max-width: 100%;
+  object-fit: cover; }
+
+.navigation-sec footer .social-icons {
+  display: grid;
+  grid-template-columns: 35px 35px 35px;
+  justify-content: center;
+  align-items: center;
+  gap: 1vmin; }
+
+.navigation-sec footer .social-icons .icon {
+  height: 35px;
+  width: 35px; }
+
+.navigation-sec footer .social-icons svg {
+  height: 100%;
+  width: 100%;
+  fill: #fff; }
+
+.navigation-sec footer .lower-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.navigation-sec footer .lower-link-wrapper {
+  display: flex; }
+
+.navigation-sec footer .lower-link-wrapper a {
+  padding: 0 10px;
+  color: inherit;
+  text-decoration: none; }
 
 .progress-sec {
   /* Safari */ }
