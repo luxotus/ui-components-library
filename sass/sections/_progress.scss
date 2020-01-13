@@ -24,5 +24,15 @@
     display: block;
   }
 
+  .loading-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .loading-spinner:not(:last-child) {
+    margin-right: 25px;
+  }
+
   @import '../components/progress/progress-bar';
+  @import '../components/progress/loading-spinner';
 }

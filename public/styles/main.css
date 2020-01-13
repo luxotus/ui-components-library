@@ -1695,36 +1695,68 @@ section {
   background-color: #4c5d83;
   color: #fff; }
 
-.progress-sec .sub-section:not(:nth-child(2)) {
-  margin-top: 30px; }
+.progress-sec {
+  /* Safari */ }
+  .progress-sec .sub-section:not(:nth-child(2)) {
+    margin-top: 30px; }
+  .progress-sec .progress-wrapper {
+    margin-top: 15px;
+    max-width: 75%; }
+  .progress-sec .view-code {
+    position: relative;
+    height: 34px;
+    width: 100%;
+    margin-top: 10px; }
+  .progress-sec .view-code button {
+    display: none;
+    margin: 0; }
+  .progress-sec .progress-wrapper:hover .view-code button {
+    display: block; }
+  .progress-sec .loading-wrapper {
+    display: flex;
+    align-items: center; }
+  .progress-sec .loading-spinner:not(:last-child) {
+    margin-right: 25px; }
+  .progress-sec .progress-bar {
+    height: 30px;
+    width: 100%;
+    background-color: #818181;
+    border-radius: 5px; }
+  .progress-sec .bar {
+    height: 100%;
+    width: 0%;
+    background-color: #1bceb0; }
+  .progress-sec .loading-spinner {
+    border: 14px solid #cbcbcb;
+    border-radius: 50%;
+    border-top: 14px solid #7849ff;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite; }
+  .progress-sec .loading-spinner.medium {
+    border: 12px solid #cbcbcb;
+    border-top: 12px solid #7849ff;
+    width: 80px;
+    height: 80px; }
+  .progress-sec .loading-spinner.small {
+    border: 6px solid #cbcbcb;
+    border-top: 6px solid #7849ff;
+    width: 40px;
+    height: 40px; }
 
-.progress-sec .progress-wrapper {
-  margin-top: 15px;
-  max-width: 75%; }
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
 
-.progress-sec .view-code {
-  position: relative;
-  height: 34px;
-  width: 100%;
-  margin-top: 10px; }
-
-.progress-sec .view-code button {
-  display: none;
-  margin: 0; }
-
-.progress-sec .progress-wrapper:hover .view-code button {
-  display: block; }
-
-.progress-sec .progress-bar {
-  height: 30px;
-  width: 100%;
-  background-color: #818181;
-  border-radius: 5px; }
-
-.progress-sec .bar {
-  height: 100%;
-  width: 0%;
-  background-color: #1bceb0; }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 .hljs-keyword,
 .hljs-attribute,
