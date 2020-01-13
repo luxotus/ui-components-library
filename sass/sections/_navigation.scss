@@ -1,11 +1,11 @@
-.tabs-sec {
+.navigation-sec {
   .sub-section:not(:nth-child(2)) {
     margin-top: 30px;
   }
 
-  .tab-outer-wrapper {
+  .navigation-wrapper {
     margin-top: 15px;
-    max-width: 75%;
+    max-width: 950px;
   }
 
   .view-code {
@@ -20,7 +20,7 @@
     margin: 0;
   }
 
-  .tab-outer-wrapper:hover .view-code button {
+  .navigation-wrapper:hover .view-code button {
     display: block;
   }
 
@@ -40,4 +40,6 @@
   }
 
   @import '../components/navigation/tabs';
+  @import '../components/navigation/header';
+  @import '../components/navigation/footer';
 }

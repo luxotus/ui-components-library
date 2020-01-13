@@ -1719,11 +1719,39 @@
       </div>
     </section>
 
-    <section class="tabs-sec">
-      <h1 class="title">Tabs</h1>
+    <section class="progress-sec">
+      <h1 class="title">Progress & Loading</h1>
       <div class="sub-section">
-        <h2 class="sub-title">Example</h2>
-        <div class="tab-outer-wrapper">
+        <h2 class="sub-title">Progress Bar</h2>
+        <div class="progress-wrapper">
+          <div class="progress-bar" id="progress-bar-01">
+            <div class="bar"></div>
+          </div>
+          <div class="view-code">
+            <button data-title="Progress bar" data-target=".progress-bar" data-css="sass/components/progress/_progress-bar.scss" data-js="src/components/progress/progress-bar.js">View Code</button>
+          </div>
+        </div>
+      </div>
+      <div class="sub-section">
+        <h2 class="sub-title">Loading Spinner</h2>
+        <div class="progress-wrapper">
+          <div class="loading-wrapper">
+            <div class="loading-spinner"></div>
+            <div class="loading-spinner medium"></div>
+            <div class="loading-spinner small"></div>
+          </div>
+          <div class="view-code">
+            <button data-title="Loading Spinner" data-target=".loading-wrapper .loading-spinner" data-css="sass/components/progress/_loading-spinner.scss">View Code</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="navigation-sec">
+      <h1 class="title">Navigation</h1>
+      <div class="sub-section">
+        <h2 class="sub-title">Tabs</h2>
+        <div class="navigation-wrapper">
           <div class="tab-wrapper">
             <div class="tabs">
               <button data-id="Dogs" class="active">Dogs</button>
@@ -1750,35 +1778,79 @@
             </div>
           </div>
           <div class="view-code">
-            <button data-title="Tabs" data-target=".tab-wrapper" data-css="sass/components/navigation/_tabs.scss" data-js="src/components/navigation/tabs.js">View Code</button>
+            <button data-title="Navigation - Tabs" data-target=".tab-wrapper" data-css="sass/components/navigation/_tabs.scss" data-js="src/components/navigation/tabs.js">View Code</button>
           </div>
         </div>
       </div>
-    </section>
+      <div class="sub-section">
+        <h2 class="sub-title">Header</h2>
 
-    <section class="progress-sec">
-      <h1 class="title">Progress & Loading</h1>
-      <div class="sub-section">
-        <h2 class="sub-title">Progress Bar</h2>
-        <div class="progress-wrapper">
-          <div class="progress-bar" id="progress-bar-01">
-            <div class="bar"></div>
-          </div>
+        <div class="navigation-wrapper">
+          <header>
+            <div class="logo">
+              <img src="./public/images/logo.png" alt="">
+            </div>
+            <ul class="nav-wrapper">
+              <li class="nav-item">
+                <p class="nav-page">Product</p>
+              </li>
+              <li class="nav-item">
+                <p class="nav-page">Industries</p>
+                <span class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                    <path fill="none" d="M0 0h24v24H0V0z"/>
+                  </svg>
+                </span>
+                <div class="dropdown">
+                  <ul>
+                    <li class="dropdown-li">
+                      <a href="#">Example 1</a>
+                    </li>
+                    <li class="dropdown-li">
+                      <a href="#">Example 2</a>
+                    </li>
+                    <li class="dropdown-li">
+                      <a href="#">Example 3</a>
+                    </li>
+                    <li class="dropdown-li">
+                      <a href="#">Example 4</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-page" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <p class="nav-page">Resources</p>
+                <span class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                    <path fill="none" d="M0 0h24v24H0V0z"/>
+                  </svg>
+                </span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-page" href="#">Company</a>
+              </li>
+            </ul>
+            <div class="join">
+              <a href="#">Login</a>
+              <button class="sign-up">Sign Up</button>
+            </div>
+          </header>
           <div class="view-code">
-            <button data-title="Progress bar" data-target=".progress-bar" data-css="sass/components/progress/_progress-bar.scss" data-js="src/components/progress/progress-bar.js">View Code</button>
+            <button data-title="Navigation - Header" data-target="header" data-css="sass/components/navigation/_header.scss">View Code</button>
           </div>
         </div>
       </div>
       <div class="sub-section">
-        <h2 class="sub-title">Loading Spinner</h2>
-        <div class="progress-wrapper">
-          <div class="loading-wrapper">
-            <div class="loading-spinner"></div>
-            <div class="loading-spinner medium"></div>
-            <div class="loading-spinner small"></div>
-          </div>
+        <h2 class="sub-title">Footer</h2>
+        <div class="navigation-wrapper">
+          <footer></footer>
           <div class="view-code">
-            <button data-title="Loading Spinner" data-target=".loading-wrapper .loading-spinner" data-css="sass/components/progress/_loading-spinner.scss">View Code</button>
+            <button data-title="Navigation - Footer" data-target="footer" data-css="sass/components/navigation/_f.scss">View Code</button>
           </div>
         </div>
       </div>
