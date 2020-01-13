@@ -1,0 +1,29 @@
+.tabs {
+  height: 50px;
+  width: 100%;
+  background-color: rgb(76, 93, 131);
+}
+
+.tabs button {
+  height: 100%;
+  padding: 0 25px;
+  border: none;
+  color: #fff;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.tabs button.active {
+  background-color: rgb(44, 57, 83);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  background-color: rgb(76, 93, 131);
+  color: #fff;
+}

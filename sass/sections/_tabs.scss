@@ -1,0 +1,36 @@
+.tabs-sec {
+  .sub-section:not(:nth-child(2)) {
+    margin-top: 30px;
+  }
+
+  .tab-outer-wrapper {
+    margin-top: 15px;
+    max-width: 75%;
+  }
+
+  .view-code button {
+    display: none;
+    margin: 10px 0 0;
+  }
+
+  .tab-outer-wrapper:hover .view-code button {
+    display: block;
+  }
+
+  .tab-content.active {
+    padding: 25px;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+
+  @import '../components/navigation/tabs';
+}

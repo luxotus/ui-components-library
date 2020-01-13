@@ -1635,6 +1635,55 @@ section {
 .tooltip-sec .item:hover .view-code button {
   display: block; }
 
+.tabs-sec .sub-section:not(:nth-child(2)) {
+  margin-top: 30px; }
+
+.tabs-sec .tab-outer-wrapper {
+  margin-top: 15px;
+  max-width: 75%; }
+
+.tabs-sec .view-code button {
+  display: none;
+  margin: 10px 0 0; }
+
+.tabs-sec .tab-outer-wrapper:hover .view-code button {
+  display: block; }
+
+.tabs-sec .tab-content.active {
+  padding: 25px; }
+  .tabs-sec .tab-content.active h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 15px; }
+  .tabs-sec .tab-content.active p {
+    font-size: 1.5rem;
+    line-height: 2rem; }
+
+.tabs-sec .tabs {
+  height: 50px;
+  width: 100%;
+  background-color: #4c5d83; }
+
+.tabs-sec .tabs button {
+  height: 100%;
+  padding: 0 25px;
+  border: none;
+  color: #fff;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 500; }
+
+.tabs-sec .tabs button.active {
+  background-color: #2c3953; }
+
+.tabs-sec .tab-content {
+  display: none; }
+
+.tabs-sec .tab-content.active {
+  display: block;
+  background-color: #4c5d83;
+  color: #fff; }
+
 .hljs-keyword,
 .hljs-attribute,
 .hljs-selector-tag,
