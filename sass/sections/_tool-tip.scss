@@ -22,9 +22,16 @@
     text-align: center;
   }
 
+  .view-code {
+    position: relative;
+    height: 34px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
   .view-code button {
     display: none;
-    margin: 10px auto 0;
+    margin: 0 auto 0;
   }
 
   .item:hover .view-code button {

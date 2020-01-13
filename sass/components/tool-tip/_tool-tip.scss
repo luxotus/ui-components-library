@@ -1,11 +1,9 @@
-/* Tooltip container */
 .tooltip {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black;
 }
 
-/* Tooltip text */
 .tooltip .tooltip-text {
   visibility: hidden;
   width: 120px;

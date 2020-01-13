@@ -1,0 +1,28 @@
+.progress-sec {
+  .sub-section:not(:nth-child(2)) {
+    margin-top: 30px;
+  }
+
+  .progress-wrapper {
+    margin-top: 15px;
+    max-width: 75%;
+  }
+
+  .view-code {
+    position: relative;
+    height: 34px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .view-code button {
+    display: none;
+    margin: 0;
+  }
+
+  .progress-wrapper:hover .view-code button {
+    display: block;
+  }
+
+  @import '../components/progress/progress-bar';
+}

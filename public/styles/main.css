@@ -644,13 +644,11 @@ textarea {
     border: 1px solid #d3d3d3;
     background-color: #f0f0f0; }
 
-/* Tooltip container */
 .tooltip {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black; }
 
-/* Tooltip text */
 .tooltip .tooltip-text {
   visibility: hidden;
   width: 120px;
@@ -1628,9 +1626,15 @@ section {
   font-size: 16px;
   text-align: center; }
 
+.tooltip-sec .view-code {
+  position: relative;
+  height: 34px;
+  width: 100%;
+  margin-top: 10px; }
+
 .tooltip-sec .view-code button {
   display: none;
-  margin: 10px auto 0; }
+  margin: 0 auto 0; }
 
 .tooltip-sec .item:hover .view-code button {
   display: block; }
@@ -1642,9 +1646,15 @@ section {
   margin-top: 15px;
   max-width: 75%; }
 
+.tabs-sec .view-code {
+  position: relative;
+  height: 34px;
+  width: 100%;
+  margin-top: 10px; }
+
 .tabs-sec .view-code button {
   display: none;
-  margin: 10px 0 0; }
+  margin: 0; }
 
 .tabs-sec .tab-outer-wrapper:hover .view-code button {
   display: block; }
@@ -1683,6 +1693,37 @@ section {
   display: block;
   background-color: #4c5d83;
   color: #fff; }
+
+.progress-sec .sub-section:not(:nth-child(2)) {
+  margin-top: 30px; }
+
+.progress-sec .progress-wrapper {
+  margin-top: 15px;
+  max-width: 75%; }
+
+.progress-sec .view-code {
+  position: relative;
+  height: 34px;
+  width: 100%;
+  margin-top: 10px; }
+
+.progress-sec .view-code button {
+  display: none;
+  margin: 0; }
+
+.progress-sec .progress-wrapper:hover .view-code button {
+  display: block; }
+
+.progress-sec .progress-bar {
+  height: 30px;
+  width: 100%;
+  background-color: #818181;
+  border-radius: 5px; }
+
+.progress-sec .bar {
+  height: 100%;
+  width: 0%;
+  background-color: #1bceb0; }
 
 .hljs-keyword,
 .hljs-attribute,

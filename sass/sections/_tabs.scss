@@ -8,9 +8,16 @@
     max-width: 75%;
   }
 
+  .view-code {
+    position: relative;
+    height: 34px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
   .view-code button {
     display: none;
-    margin: 10px 0 0;
+    margin: 0;
   }
 
   .tab-outer-wrapper:hover .view-code button {
