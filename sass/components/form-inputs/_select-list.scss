@@ -51,6 +51,10 @@
   opacity: 1;
 }
 
+.custom-select.open .arrow-icon {
+  transform: rotateZ(180deg);
+}
+
 .custom-select.open .select-dropdown {
   display: block;
 }

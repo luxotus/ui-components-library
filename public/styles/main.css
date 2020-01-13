@@ -1527,6 +1527,9 @@ section {
 .form-inputs-sec .custom-select:hover .arrow-icon {
   opacity: 1; }
 
+.form-inputs-sec .custom-select.open .arrow-icon {
+  transform: rotateZ(180deg); }
+
 .form-inputs-sec .custom-select.open .select-dropdown {
   display: block; }
 
