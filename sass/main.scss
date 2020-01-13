@@ -8,6 +8,7 @@
 
 // Components
 @import 'components/modals/general';
+@import 'components/tool-tip/tool-tip';
 
 // Pages
 @import 'pages/home';
@@ -19,6 +20,7 @@
 @import 'sections/alerts';
 @import 'sections/buttons';
 @import 'sections/form-inputs';
+@import 'sections/tool-tip';
 
 // Vendors
 @import 'vendors/hljs';
