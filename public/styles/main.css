@@ -647,11 +647,12 @@ textarea {
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black; }
+  border-bottom: 1px dotted black;
+  --main-width: 120px; }
 
 .tooltip .tooltip-text {
   visibility: hidden;
-  width: 120px;
+  width: var(--main-width);
   background-color: #555;
   color: #fff;
   text-align: center;
@@ -665,7 +666,7 @@ textarea {
 .tooltip.top .tooltip-text {
   bottom: 125%;
   left: 50%;
-  margin-left: -60px; }
+  margin-left: calc(-1 *(var(--main-width) / 2)); }
 
 .tooltip.right .tooltip-text {
   top: -5px;
@@ -674,7 +675,7 @@ textarea {
 .tooltip.bottom .tooltip-text {
   top: 125%;
   left: 50%;
-  margin-left: -60px; }
+  margin-left: calc(-1 *(var(--main-width) / 2)); }
 
 .tooltip.left .tooltip-text {
   top: -5px;
