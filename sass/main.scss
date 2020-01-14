@@ -8,6 +8,7 @@
 
 // Components
 @import 'components/modals/general';
+@import 'components/modals/example';
 @import 'components/tool-tip/tool-tip';
 
 // Pages
@@ -23,6 +24,7 @@
 @import 'sections/tool-tip';
 @import 'sections/navigation';
 @import 'sections/progress';
+@import 'sections/modal';
 
 // Vendors
 @import 'vendors/hljs';

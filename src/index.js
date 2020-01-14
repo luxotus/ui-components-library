@@ -6,6 +6,7 @@ import passwordInput from './components/form-inputs/password-input';
 import selectList from './components/form-inputs/select-list';
 import tabs from './components/navigation/tabs';
 import progressBar from './components/progress/progress-bar';
+import modalExample from './components/modals/modal-example';
 
 modal.init();
 icons.init();
@@ -15,3 +16,4 @@ passwordInput.init();
 selectList.init();
 tabs.init();
 progressBar.init();
+modalExample.init();

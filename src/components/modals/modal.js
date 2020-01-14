@@ -57,7 +57,6 @@ const modal = (function() {
     const query = event.currentTarget.getAttribute('data-target');
     const dataCSS = event.currentTarget.getAttribute('data-css');
     const dataJS = event.currentTarget.getAttribute('data-js');
-    const el = event.target.parentElement.parentElement.querySelector(query);
 
     // Clearing code sections
     document.querySelector('.general-modal .code-wrapper .html').innerHTML = '';
@@ -67,14 +66,26 @@ const modal = (function() {
     // Adding title to modal
     document.querySelector('.general-modal header h1').innerHTML = event.currentTarget.getAttribute('data-title');
 
-    // Adding HTML to code section in modal
-    document.querySelector('.general-modal .code-wrapper .html').appendChild(document.createTextNode(el.outerHTML));
+    if (query !== null) {
+      const el = event.target.parentElement.parentElement.querySelector(query);
+
+      // Adding HTML to code section in modal
+      document.querySelector('.general-modal .code-wrapper .html').appendChild(document.createTextNode(el.outerHTML));
+    } else {
+      const queryParent = event.currentTarget.getAttribute('data-target-parent');
+      const el = document.querySelector(queryParent);
+
+      // Adding HTML to code section in modal
+      document.querySelector('.general-modal .code-wrapper .html').appendChild(document.createTextNode(el.outerHTML));
+    }
 
     // Adding CSS to the code section in modal
     getCodeFromFile(dataCSS, (data) => {
       document.querySelector('.general-modal .code-wrapper .css').innerHTML = data;
       reloadCode();
     });
+
+
 
     if (dataJS !== null) {
       getCodeFromFile(dataJS, (data) => {

@@ -1,0 +1,55 @@
+.modal-sec {
+  .sub-section:not(:nth-child(2)) {
+    margin-top: 30px;
+  }
+
+  .btn-wrapper {
+    margin-top: 15px;
+    max-width: 950px;
+  }
+
+  .view-code {
+    position: relative;
+    height: 34px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .view-code button {
+    display: none;
+    margin: 0;
+  }
+
+  .btn-wrapper:hover .view-code button {
+    display: block;
+  }
+
+  .tab-content.active {
+    padding: 25px;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+
+  .open-modal-btn {
+    border: none;
+    padding: 8px 16px;
+    font-size: 2.5rem;
+    border-radius: 5px;
+    background-color: #3a82ff;
+    color: #fff;
+  }
+}
+
+.modal-body p {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
