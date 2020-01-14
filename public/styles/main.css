@@ -1826,7 +1826,7 @@ section {
 .navigation-sec footer .quick-links {
   display: grid;
   grid-template-columns: min-content min-content min-content;
-  gap: 4vmin;
+  gap: 6vmin;
   justify-content: center; }
 
 .navigation-sec footer .quick-links h5 {
