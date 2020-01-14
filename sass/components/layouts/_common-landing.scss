@@ -1,0 +1,21 @@
+.common-landing-wrapper {
+  display: grid;
+  grid-template-columns: .75fr 1fr;
+  justify-items: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.text-box {
+  height: 70%;
+  width: 75%;
+  background-color: gray;
+}
+
+.image-side {
+  height: 100%;
+  width: 100%;
+  background-color: gray;
+}

@@ -38,5 +38,17 @@
     }
   }
 
+  .side-bar-wrapper,
+  .common-landing-wrapper {
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.14);
+  }
+
+  .list {
+    max-width: 50%;
+  }
+
   @import '../components/layouts/grid-cards';
+  @import '../components/layouts/side-bar';
+  @import '../components/layouts/list';
+  @import '../components/layouts/common-landing';
 }

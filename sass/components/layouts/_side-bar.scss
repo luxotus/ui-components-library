@@ -1,0 +1,15 @@
+.side-bar-wrapper {
+  display: flex;
+}
+
+.side-bar {
+  height: 400px; /* or 100vh */
+  width: 20%;
+  background-color: #ffffff;
+}
+
+.main-content {
+  height: 400px; /* or 100vh */
+  width: 80%;
+  background-color: #bfdcec;
+}
