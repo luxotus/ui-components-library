@@ -1787,13 +1787,13 @@ section {
   background-color: #292929;
   color: #fff; }
 
-.navigation-sec .upper-footer {
+.navigation-sec footer .upper-footer {
   display: grid;
   grid-template-columns: .3fr 1fr;
   align-items: center;
   padding: 75px 25px; }
 
-.navigation-sec .lower-footer {
+.navigation-sec footer .lower-footer {
   padding: 25px;
   background-color: #4a4a4a; }
 
@@ -1815,13 +1815,35 @@ section {
   gap: 1vmin; }
 
 .navigation-sec footer .social-icons .icon {
-  height: 35px;
-  width: 35px; }
+  height: 30px;
+  width: 30px; }
 
 .navigation-sec footer .social-icons svg {
   height: 100%;
   width: 100%;
   fill: #fff; }
+
+.navigation-sec footer .quick-links {
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  gap: 4vmin;
+  justify-content: center; }
+
+.navigation-sec footer .quick-links h5 {
+  font-size: 20px;
+  font-weight: 600; }
+
+.navigation-sec footer .quick-links ul {
+  margin-top: 10px; }
+
+.navigation-sec footer .quick-links li {
+  padding: 10px 0; }
+
+.navigation-sec footer .quick-links a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: capitalize; }
 
 .navigation-sec footer .lower-footer {
   display: flex;

@@ -4,14 +4,14 @@ footer {
   color: #fff;
 }
 
-.upper-footer {
+footer .upper-footer {
   display: grid;
   grid-template-columns: .3fr 1fr;
   align-items: center;
   padding: 75px 25px;
 }
 
-.lower-footer {
+footer .lower-footer {
   padding: 25px;
   background-color: #4a4a4a;
 }
@@ -37,14 +37,41 @@ footer .social-icons {
 }
 
 footer .social-icons .icon {
-  height: 35px;
-  width: 35px;
+  height: 30px;
+  width: 30px;
 }
 
 footer .social-icons svg {
   height: 100%;
   width: 100%;
   fill: #fff;
+}
+
+footer .quick-links {
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  gap: 4vmin;
+  justify-content: center;
+}
+
+footer .quick-links h5 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+footer .quick-links ul {
+  margin-top: 10px;
+}
+
+footer .quick-links li {
+  padding: 10px 0;
+}
+
+footer .quick-links a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: capitalize;
 }
 
 footer .lower-footer {
