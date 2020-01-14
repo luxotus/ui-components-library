@@ -1,0 +1,42 @@
+.layout-sec {
+  .sub-section:not(:nth-child(2)) {
+    margin-top: 30px;
+  }
+
+  .layout-wrapper {
+    margin-top: 15px;
+  }
+
+  .view-code {
+    position: relative;
+    height: 34px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .view-code button {
+    display: none;
+    margin: 0;
+  }
+
+  .layout-wrapper:hover .view-code button {
+    display: block;
+  }
+
+  .tab-content.active {
+    padding: 25px;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+
+  @import '../components/layouts/grid-cards';
+}

@@ -1,0 +1,13 @@
+.grid-cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, 150px );
+  gap: 2vmin;
+}
+
+.grid-card {
+  height: 200px;
+  width: 150px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.14);
+}
