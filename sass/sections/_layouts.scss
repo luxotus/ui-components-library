@@ -39,8 +39,13 @@
   }
 
   .side-bar-wrapper,
-  .common-landing-wrapper {
+  .common-landing-wrapper,
+  .social-wrapper {
     box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.14);
+  }
+
+  .social-wrapper {
+    max-width: 85%;
   }
 
   .list {
@@ -51,4 +56,5 @@
   @import '../components/layouts/side-bar';
   @import '../components/layouts/list';
   @import '../components/layouts/common-landing';
+  @import '../components/layouts/social';
 }

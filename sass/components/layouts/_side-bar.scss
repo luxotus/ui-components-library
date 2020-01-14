@@ -2,13 +2,13 @@
   display: flex;
 }
 
-.side-bar {
+.side-bar-wrapper .side-bar {
   height: 400px; /* or 100vh */
   width: 20%;
   background-color: #ffffff;
 }
 
-.main-content {
+.side-bar-wrapper .main-content {
   height: 400px; /* or 100vh */
   width: 80%;
   background-color: #bfdcec;
