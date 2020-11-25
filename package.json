@@ -29,7 +29,7 @@
     "webpack-cli": "^3.3.10"
   },
   "dependencies": {
-    "highlight.js": "^9.17.1",
+    "highlight.js": "^10.1.2",
     "local-web-server": "^3.0.7",
     "node-sass": "^4.13.0"
   }
